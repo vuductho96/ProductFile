@@ -20,12 +20,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        string filePath = "D:/products.txt";
+        string filePath = "products.txt";
         List<Product> products = new List<Product>();
 
         while (true)
         {
-            Console.WriteLine("1. Add product");
+            Console.WriteLine("\n1. Add product");
             Console.WriteLine("2. Display products");
             Console.WriteLine("3. Search product");
             Console.WriteLine("4. Exit");
@@ -105,7 +105,7 @@ class Program
                                     ProductName = parts[1],
                                     Manufacturer = parts[2],
                                     Price = Convert.ToDouble(parts[3]),
-
+                                    OtherDescription = parts[4]
                                 };
                                 Console.WriteLine("Product found:");
                                 Console.WriteLine(p.ToString());
